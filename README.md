@@ -1,5 +1,7 @@
 # MyReads Project
 
+A simple system for managing personal libraries. The user can classify books in terms that he is currently reading, wants to read, or has already read. Also, the user can search for new books and add them to the library according to previous classifications.
+
 Demo: https://ibrahim-embaby.github.io/Udacity-React-Project/
 
 ## Install
