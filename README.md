@@ -2,14 +2,15 @@
 
 Demo: https://ibrahim-embaby.github.io/Udacity-React-Project/
 
-## TL;DR
+## Install
 
-To get started developing right away:
+`npm install`
 
-- install all project dependencies with `npm install`
-- start the development server with `npm start`
+## Usage
 
-## What You're Getting
+`npm start`
+
+<!-- ## What You're Getting
 
 ```bash
 ├── CONTRIBUTING.md
@@ -42,7 +43,7 @@ To get started developing right away:
     └── index.js # You should not need to modify this file. It is used for DOM rendering only.
 ```
 
-Remember that good React design practice is to create new JS files for each component and use import/require statements to include them where they are needed.
+Remember that good React design practice is to create new JS files for each component and use import/require statements to include them where they are needed. -->
 
 ## Backend Server
 
