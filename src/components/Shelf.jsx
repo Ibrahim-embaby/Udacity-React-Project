@@ -1,6 +1,5 @@
 import Book from "./Book";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
 
 function Shelf({ shelfName, books, updateShelf }) {
   return (
@@ -11,12 +10,7 @@ function Shelf({ shelfName, books, updateShelf }) {
           {books.map((book) => {
             return (
               <li key={book.id}>
-                <Link
-                  to={`/Udacity-React-Project/book/${book.id}`}
-                  style={{ color: "unset", textDecoration: "unset" }}
-                >
-                  <Book book={book} updateShelf={updateShelf} />
-                </Link>
+                <Book book={book} updateShelf={updateShelf} />
               </li>
             );
           })}
