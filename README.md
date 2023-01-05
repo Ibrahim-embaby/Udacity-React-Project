@@ -4,11 +4,15 @@ Demo: https://ibrahim-embaby.github.io/Udacity-React-Project/
 
 ## Install
 
-`npm install`
+```bash
+npm install
+```
 
 ## Usage
 
-`npm start`
+```bash
+npm start
+```
 
 <!-- ## What You're Getting
 
