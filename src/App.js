@@ -29,10 +29,17 @@ function App() {
         element={<Home books={books} updateShelf={updateShelf} />}
       />
       <Route
-        path="/search"
+        path="/Udacity-React-Project"
+        element={<Home books={books} updateShelf={updateShelf} />}
+      />
+      <Route
+        path="/Udacity-React-Project/search"
         element={<SearchPage books={books} updateShelf={updateShelf} />}
       />
-      <Route path="/book/:id" element={<BookDetails books={books} />} />
+      <Route
+        path="/Udacity-React-Project/book/:id"
+        element={<BookDetails books={books} />}
+      />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

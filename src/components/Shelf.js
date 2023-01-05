@@ -12,7 +12,7 @@ function Shelf({ shelfName, books, updateShelf }) {
             return (
               <li key={book.id}>
                 <Link
-                  to={`/book/${book.id}`}
+                  to={`/Udacity-React-Project/book/${book.id}`}
                   style={{ color: "unset", textDecoration: "unset" }}
                 >
                   <Book book={book} updateShelf={updateShelf} />

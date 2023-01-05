@@ -28,7 +28,7 @@ function Home({ books, updateShelf }) {
         </div>
       </div>
       <div className="open-search">
-        <Link to="/search">Add a book</Link>
+        <Link to="/Udacity-React-Project/search">Add a book</Link>
       </div>
     </div>
   );
