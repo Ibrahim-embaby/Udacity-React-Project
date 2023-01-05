@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 function Book({ book, updateShelf }) {
   return (
     <div className="book">
@@ -17,13 +19,11 @@ function Book({ book, updateShelf }) {
             value={book.shelf ? book.shelf : "none"}
             onChange={(e) => updateShelf(book, e.target.value)}
           >
-            <option value="none" disabled>
-              Move to...
-            </option>
+            <option disabled>Move to...</option>
             <option value="currentlyReading">Currently Reading</option>
             <option value="wantToRead">Want to Read</option>
             <option value="read">Read</option>
-            {book.shelf && <option value="none">None</option>}
+            <option value="none">None</option>
           </select>
         </div>
       </div>
@@ -32,5 +32,10 @@ function Book({ book, updateShelf }) {
     </div>
   );
 }
+
+Book.propTypes = {
+  book: PropTypes.object.isRequired,
+  updateShelf: PropTypes.func.isRequired,
+};
 
 export default Book;

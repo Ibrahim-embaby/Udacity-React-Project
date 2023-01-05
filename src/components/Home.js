@@ -1,5 +1,6 @@
 import Shelf from "./Shelf";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 function Home({ books, updateShelf }) {
   return (
@@ -32,5 +33,10 @@ function Home({ books, updateShelf }) {
     </div>
   );
 }
+
+Home.propTypes = {
+  books: PropTypes.array.isRequired,
+  updateShelf: PropTypes.func.isRequired,
+};
 
 export default Home;

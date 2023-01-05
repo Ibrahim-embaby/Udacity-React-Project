@@ -88,7 +88,8 @@ body,
   outline: none;
 }
 
-.close-search {
+
+.close-search, .back {
   display: block;
   top: 20px;
   left: 15px;
@@ -101,6 +102,8 @@ body,
   background-size: 28px;
   font-size: 0;
 }
+
+
 
 .search-books-results {
   padding: 80px 10px 20px;
@@ -175,3 +178,62 @@ body,
   text-align: center;
   font-size: 0.8em;
 }
+
+
+
+.not-found {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  font-weight: bold;
+
+}
+
+.not-found > p{
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+
+.not-found > div {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #2e7c31;
+}
+
+
+.book-details{
+  padding: 50px;
+
+}
+
+.book-header{
+  display: flex;
+}
+
+.palce-holder{
+  width: 200px;
+  height: 285.95px;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-header-info{
+  margin: auto 40px ;
+}
+
+.book-header-info span{
+  font-weight: bold;
+}
+
+.book-body{
+  margin-top: 20px;
+}
+
+

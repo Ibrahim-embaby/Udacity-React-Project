@@ -4,19 +4,22 @@ import Home from "./components/Home";
 import SearchPage from "./components/SearchPage";
 import { getAll, update } from "./BooksAPI";
 import { useEffect, useState } from "react";
+import NotFound from "./components/NotFound";
+import BookDetails from "./components/BookDetails";
 
 function App() {
   const [books, setBooks] = useState([]);
-  const [toggle, setToggle] = useState(false);
 
   useEffect(async () => {
     const books = await getAll();
     setBooks(books);
-  }, [toggle]);
+  }, []);
 
   const updateShelf = async (book, shelf) => {
-    await update(book, shelf);
-    setToggle((prev) => !prev);
+    book.shelf = shelf;
+    await update(book, shelf).then(() => {
+      setBooks([...books.filter((b) => b.id !== book.id), book]);
+    });
   };
 
   return (
@@ -29,6 +32,8 @@ function App() {
         path="/search"
         element={<SearchPage books={books} updateShelf={updateShelf} />}
       />
+      <Route path="/book/:id" element={<BookDetails books={books} />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }
