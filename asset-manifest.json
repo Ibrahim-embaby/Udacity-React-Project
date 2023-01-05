@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Udacity-React-Project/static/css/main.4306f9fd.chunk.css",
-    "main.js": "/Udacity-React-Project/static/js/main.5d850da4.chunk.js",
-    "main.js.map": "/Udacity-React-Project/static/js/main.5d850da4.chunk.js.map",
+    "main.js": "/Udacity-React-Project/static/js/main.d427c8d4.chunk.js",
+    "main.js.map": "/Udacity-React-Project/static/js/main.d427c8d4.chunk.js.map",
     "runtime-main.js": "/Udacity-React-Project/static/js/runtime-main.01f3daa7.js",
     "runtime-main.js.map": "/Udacity-React-Project/static/js/runtime-main.01f3daa7.js.map",
     "static/js/2.56fcf294.chunk.js": "/Udacity-React-Project/static/js/2.56fcf294.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.01f3daa7.js",
     "static/js/2.56fcf294.chunk.js",
     "static/css/main.4306f9fd.chunk.css",
-    "static/js/main.5d850da4.chunk.js"
+    "static/js/main.d427c8d4.chunk.js"
   ]
 }
