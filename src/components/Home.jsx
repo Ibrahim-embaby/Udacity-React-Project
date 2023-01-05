@@ -1,17 +1,8 @@
 import Shelf from "./Shelf";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
-import { useEffect, useState } from "react";
 
 function Home({ books, updateShelf }) {
-  console.log(books);
-  const [displayedBooks, setDisplayedBooks] = useState(books);
-  useEffect(() => {
-    const deleted = books.filter((book) => book.id === "evuwdDLfAyYC");
-    if (deleted) {
-      setDisplayedBooks(books.filter((book) => book.id !== "evuwdDLfAyYC"));
-    }
-  }, []);
   return (
     <div className="list-books">
       <div className="list-books-title">
@@ -21,19 +12,17 @@ function Home({ books, updateShelf }) {
         <div>
           <Shelf
             shelfName="Currently Reading"
-            books={displayedBooks.filter(
-              (book) => book.shelf === "currentlyReading"
-            )}
+            books={books.filter((book) => book.shelf === "currentlyReading")}
             updateShelf={updateShelf}
           />
           <Shelf
             shelfName="Want to Read"
-            books={displayedBooks.filter((book) => book.shelf === "wantToRead")}
+            books={books.filter((book) => book.shelf === "wantToRead")}
             updateShelf={updateShelf}
           />
           <Shelf
             shelfName="Read"
-            books={displayedBooks.filter((book) => book.shelf === "read")}
+            books={books.filter((book) => book.shelf === "read")}
             updateShelf={updateShelf}
           />
         </div>

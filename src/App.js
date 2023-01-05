@@ -12,7 +12,12 @@ function App() {
 
   useEffect(async () => {
     const books = await getAll();
-    setBooks(books);
+    const deleted = books.filter((book) => book.id === "evuwdDLfAyYC");
+    if (deleted) {
+      setBooks(books.filter((book) => book.id !== "evuwdDLfAyYC"));
+    } else {
+      setBooks(books);
+    }
   }, []);
 
   const updateShelf = async (book, shelf) => {
